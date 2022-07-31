@@ -1,0 +1,335 @@
+
+body {
+    font-family: 'Poppins', sans-serif;
+    /* font-size: 1.6rem; */
+    background-color: white;
+    color: #919191;
+    font-weight: 400;
+    font-style: normal;
+}
+p{
+    color: #919191;
+}
+a {
+    text-decoration: none !important;
+}
+
+li {
+    list-style: none;
+    color: #919191;
+}
+
+.container {
+    max-width: 114rem;
+    margin: 0 auto;
+    padding: 0 3rem;
+}
+
+.d-flex {
+    display: flex;
+    align-items: center;
+}
+
+.navigation {
+    height: 6rem;
+    line-height: 6rem;
+}
+
+.nav-center {
+    justify-content: space-between;
+}
+
+.nav-center .nav-item:not(:last-child) {
+    margin-right: 0, 5rem;
+}
+
+.nav-center .nav-link {
+    font-size: 1.3rem;
+    padding: 1rem;
+}
+
+
+.nav-center .hamburger {
+    display: none;
+    font-size: 2.3rem;
+    color: black;
+    cursor: pointer;
+}
+.logo{
+    color: #4a4a4a;
+}
+
+.logo:hover{
+    color: #4a4a4a;
+}
+
+.hero{
+    margin-top: 3vw;
+  
+}
+.carousel{
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+}
+
+.course-text{
+
+}
+.card-text small{
+    color: #289bde;
+}
+
+/* buttons */
+.button a {
+    border: 2.3px solid #78c0ea;
+    padding: 1vw 2.5vw;
+    font-weight: bold;
+    font-size: 1.3vw;
+    border-radius: 0.4vw;
+    text-decoration: none;
+    color: #289bde;
+}
+
+.button1 a{
+    border: 2.3px solid #78c0ea;
+    padding: 1vw 2.5vw;
+    font-weight: bold;
+    font-size: 1.3vw;
+    border-radius: 0.4vw;
+    text-decoration: none;
+    color: #fff;
+    background: #289bde;
+}
+.button2 a{
+    border: 2.3px solid #78c0ea;
+    padding: 1vw 2.5vw;
+    font-weight: bold;
+    font-size: 1.3vw;
+    border-radius: 0.4vw;
+    text-decoration: none;
+    color:#289bde;
+    background: #289bde;
+}
+/* button */
+.carousel-item::before{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0.7;
+}
+
+.carousel-caption{
+    bottom: 180px !important;
+    padding: 0px 50px;
+}
+
+.carousel-caption h5{
+    font-size: 40px;
+}
+
+.carousel-caption p{
+    margin-top: 15px;
+}
+
+
+.slide-btn a{
+    display: inline-block;
+    padding: 1vw 3vw;
+    border: 1px solid #289bde;
+    color: #ffffff;
+    background: #289bde;
+    border-radius: 0.5vw;
+}
+
+/* Explore */
+
+.Explore-color{
+    background-color: #f4fafd;
+}
+
+
+.join-bg{
+    background-color: #289bde;
+}
+
+
+.card-border .card{
+    border: none;
+    /* box-shadow: 5px 5px 10px lightgray; */
+}
+.content{
+    padding-top: 10vw;
+}
+.text{
+    /* text-shadow: 2px 2px 2px #1C6EA4; */
+color: rgb(255,255,255);
+text-shadow: 4px 3px 0px #1C6EA4;
+}
+
+@media (max-width:992px) {
+    
+.carousel-caption{
+    bottom: 18px !important;
+    padding: 0px 50px;
+}
+
+.carousel-caption h5{
+    font-size: 25px !important;
+}
+
+.carousel-caption p{
+    margin-top: 15px;
+}
+
+}
+
+
+
+
+
+
+
+
+
+/********************************** Responsive Screen *************************** */
+
+
+/* Small Device */
+
+    @media (max-width:600px) {
+    
+        .carousel-caption{
+            bottom: -11px !important;
+            padding: 0px 50px;
+        }
+        
+        .carousel-caption h5{
+            font-size: 25px;
+        }
+        
+        .carousel-caption p{
+            margin-top: 15px;
+          
+        }
+
+
+
+
+        .explore_set{
+            text-align: center;
+        }
+
+        .explore_para{
+            text-align: justify;
+        }
+
+
+        }
+    
+    
+    
+    
+
+/* Medium Device */
+
+
+@media (max-width:768px) {
+    .nav-list {
+        position: fixed;
+        top: 12%;
+        left: -100%;
+        flex-direction: column;
+        align-items: flex-start;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+        background-color: white;
+        height: 100%;
+        max-width: 35rem;
+        width: 0;
+        z-index: 100;
+        transition: all 300ms ease-in-out;
+    }
+
+    .nav-list.open {
+        left: 0;
+        width: 100%;
+    }
+
+    .nav-list .nav-item {
+        margin: 0 0 1rem 0;
+        width: 100%;
+    }
+
+    .nav-list .nav-link {
+        font-size: 2rem;
+        color: var(--black);
+    }
+
+    .nav-center .hamburger {
+        display: block;
+        font-size: 3rem;
+        
+    }
+
+    .button a {
+        font-size: 1vw;
+        display: none;
+        padding: 1vw 2vw;
+    }
+    .carousel-caption{
+        bottom: 18px !important;
+        padding: 0px 50px;
+    }
+    
+    .carousel-caption h5{
+        font-size: 40px;
+    }
+    
+    .carousel-caption p{
+        margin-top: 15px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
